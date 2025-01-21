@@ -9,7 +9,8 @@ namespace CodeScanTest
     {
         public void printme(Object obj)
         {
-            Console.WriteLine(obj.ToString());
+            if(null != obj)
+                Console.WriteLine(obj);
         }
     }
 }

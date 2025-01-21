@@ -13,7 +13,7 @@ namespace CodeScanTest
             Console.WriteLine("Hello World!");
             // Dynamic Test call
             dynamic obj = new DynamicTest();
-            obj.otherprintme();
+            obj.printme();
 
             // Invalid API Test
             CommonFunctions.printme(null);
@@ -22,7 +22,7 @@ namespace CodeScanTest
             CommonFunctions.createFile("");
 
             // CSS Vulnerability
-            CSSVulnerability c = new CSSVulnerability();
+            //CSSVulnerability c = new CSSVulnerability();
         }
     }
 }

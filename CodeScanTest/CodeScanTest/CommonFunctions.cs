@@ -10,12 +10,13 @@ namespace CodeScanTest
     {
         public static void printme(Object obj)
         {
-            Console.WriteLine(obj.ToString());
+            if(null != obj )
+                Console.WriteLine(obj);
         }
 
         public static void createFile(String fileName)
         {
-            if (fileName != null && fileName.Length >= 0)
+            if (fileName != null && fileName.Length > 0)
             {
                 File.Delete(fileName);
                 File.Create(fileName);
