@@ -2,10 +2,7 @@
 // Author: Sachin Keskar
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Web;
 
 namespace CodeScanTest
 {
@@ -14,6 +11,18 @@ namespace CodeScanTest
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            // Dynamic Test call
+            dynamic obj = new DynamicTest();
+            obj.printme(null);
+
+            // Invalid API Test
+            CommonFunctions.printme(null);
+
+            // Create File Test
+            CommonFunctions.createFile("");
+
+            // CSS Vulnerability
+            //CSSVulnerability c = new CSSVulnerability();
         }
     }
 }
