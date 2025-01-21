@@ -59,7 +59,7 @@ jobs:
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v3
       with:
-        languages: c-cpp
+        languages: csharp
         config-file: .github\codeql-config.yml
 
     - name: Add msbuild to PATH
