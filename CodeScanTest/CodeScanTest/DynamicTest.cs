@@ -7,9 +7,9 @@ namespace CodeScanTest
 {
     internal class DynamicTest
     {
-        public void printme()
+        public void printme(Object obj)
         {
-            Console.WriteLine(this.ToString());
+            Console.WriteLine(obj.ToString());
         }
     }
 }

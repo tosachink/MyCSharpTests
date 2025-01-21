@@ -13,7 +13,7 @@ namespace CodeScanTest
             Console.WriteLine("Hello World!");
             // Dynamic Test call
             dynamic obj = new DynamicTest();
-            obj.printme();
+            obj.otherprintme();
 
             // Invalid API Test
             CommonFunctions.printme(null);
